@@ -99,3 +99,11 @@
     border: 0px;
     outline: none;
 }
+
+.serif, h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+*, body {
+    font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+}
