@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto DashBoard - Conteudo - Relatorio de Vendas</title>
+    <title>Projeto DashBoard - Conteudo - Divisao e Comissao</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -55,7 +55,7 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-1 col-xl-2 bg-primary vh-100 d-flex justify-content-center">
+            <div class="col-1 col-xl-2 bg-primary min-vh-100 d-flex justify-content-center">
                 <ul class="nav pt-4">
                     <li class="nav-item">
                         <a href="#" class="text-white text-decoration-none fs-3">
@@ -65,16 +65,18 @@
                     </li>
                 </ul>
             </div>
-            <div class="col bg-light vh-100">
+            <div class="col bg-light min-vh-100">
                 <div class="row pt-4 px-4">
                     <h1 class="text-primary">Dashboard</h1>
                 </div>
-                <div class="row pt-4 px-4 g-3">
+                <div class="row py-4 px-4 g-3">
                     <div class="col-xxl-5">
                         <div class="card border-0">
                             <div class="card-body">
                                 <h5 class="card-title">Timeline</h5>
-                                <h6 class="card-subtitle text-secondary fw-light">Atualizações e notificações</h6>
+                                <h6 class="card-subtitle text-secondary fw-light">
+                                    Atualizações e notificações
+                                </h6>
 
                                 <table class="mt-4 table table-borderless">
                                     <tr>
@@ -83,11 +85,15 @@
                                     </tr>
                                     <tr>
                                         <td class="fw-bold text-success">10:42</td>
-                                        <td class="text-secondary fw-light">Meta de vendas atingida</td>
+                                        <td class="text-secondary fw-light">
+                                            Meta de vendas atingida
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="fw-bold text-success">11:10</td>
-                                        <td class="text-secondary fw-light">Nova venda realizada</td>
+                                        <td class="text-secondary fw-light">
+                                            Nova venda realizada
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="fw-bold text-danger">12:19</td>
@@ -95,18 +101,21 @@
                                     </tr>
                                     <tr>
                                         <td class="fw-bold text-success">15:19</td>
-                                        <td class="text-secondary fw-light">Nova venda realizada</td>
+                                        <td class="text-secondary fw-light">
+                                            Nova venda realizada
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="fw-bold text-success">15:19</td>
-                                        <td class="text-secondary fw-light">Chegada de produtos no estoque</td>
+                                        <td class="text-secondary fw-light">
+                                            Chegada de produtos no estoque
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="fw-bold text-warning">17:19</td>
                                         <td class="text-secondary fw-light">Estoque em 25%</td>
                                     </tr>
                                 </table>
-
                             </div>
                         </div>
                     </div>
@@ -114,7 +123,10 @@
                         <div class="card border-0">
                             <div class="card-body">
                                 <h5 class="card-title">Relatório de vendas</h5>
-                                <h6 class="card-subtitle text-secondary fw-light"> 59.382 vendas</h6>
+                                <h6 class="card-subtitle text-secondary fw-light">
+                                    59.382 vendas
+                                </h6>
+
                                 <table class="mt-4 table table-borderless align-middle">
                                     <tr>
                                         <td>
@@ -168,23 +180,52 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="card">
+                    <div class="col-xxl-5">
+                        <div class="card border-0">
                             <div class="card-body">
-                                <h3>Timeline</h3>
+                                <h5 class="card-title">Divisão das vendas</h5>
+                                <h6 class="card-subtitle text-secondary fw-light">
+                                    29.382 vendas
+                                </h6>
+                                <div class="row text-center fw-bold fs-5">
+                                    <div class="col">
+                                        <span class="text-warning d-block">52%</span>Presencial
+                                    </div>
+                                    <div class="col">
+                                        <span class="text-success d-block">48%</span> Online
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-9">
-                        <div class="card">
+                    <div class="col-xxl-7">
+                        <div class="card border-0">
                             <div class="card-body">
-                                <h3>Gráficos</h3>
+                                <h5 class="card-title">Relatório de comissão</h5>
+                                <h6 class="card-subtitle text-secondary fw-light">
+                                    29.382 vendas
+                                </h6>
+
+                                <div class="row fw-bold">
+                                    <div class="col">
+                                        <span class="d-block text-secondary fw-normal">Vendas</span>
+                                        R$ 129.001,00
+                                    </div>
+                                    <div class="col">
+                                        <span class="d-block text-secondary fw-normal">Comissão</span>
+                                        R$ 12.900,10
+                                    </div>
+                                    <div class="col">
+                                        <span class="d-block text-secondary fw-normal">Bônus</span>
+                                        -
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="d-none d-xl-block col-2 bg-primary text-white vh-100 pt-4">
+            <div class="d-none d-xl-block col-2 bg-primary text-white min-vh-100 pt-4">
                 <h1 class="lead text-center">Notificações</h1>
                 <div class="mt-4 mx-2 bg-white-50 p-2 rounded">
                     <h5>Maria diz:</h5>
@@ -192,15 +233,13 @@
                 </div>
                 <div class="mt-4 mx-2 bg-white-50 p-2 rounded">
                     <h5>João diz:</h5>
-                    <p class="mb-0">Me envie a tabela de valores por favor.</p>
+                    <p class="mb-0">Me envia a tabela de valores por favor.</p>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
 </body>
 
